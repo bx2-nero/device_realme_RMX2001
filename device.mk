@@ -28,6 +28,9 @@ $(call inherit-product, vendor/realme/RMX2001/RMX2001-vendor.mk)
 # Parts
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
+# Realme Dirac
+$(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
+
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
