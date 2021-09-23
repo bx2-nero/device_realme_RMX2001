@@ -25,9 +25,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RMX2001/RMX2001-vendor.mk)
 
-# Realme Dirac
-$(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
-
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
@@ -157,9 +154,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
-#Realme Parts
+#Realme Parts & Realme Dirac
 PRODUCT_PACKAGES += \
-    RealmeParts
+    RealmeParts \
+    RealmeDirac
 
 # Misc
 PRODUCT_COPY_FILES += \
